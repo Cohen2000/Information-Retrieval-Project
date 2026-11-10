@@ -1,4 +1,17 @@
-# Usage
+# Information Retrieval: Crawler and Search Engine
+
+A Python project that follows the information-retrieval pipeline from collecting web pages to searching an index. It brings together crawling, text preprocessing, a database-backed inverted index and a local web interface.
+
+## What to look at
+
+- [crawl/](crawl/): crawling, document processing, indexing and query handling.
+- [crawl/index.py](crawl/index.py) and [index.sql](index.sql): inverted-index construction and storage.
+- [GUI/server_init.py](GUI/server_init.py): Flask interface returning ranked search results.
+- [queries.txt](queries.txt) and [results.txt](results.txt): example batch queries and stored results.
+
+**Stack:** Python, SQLite/APSW, NLTK and Flask. Start with the source and saved results for a quick review; running a new crawl requires network access and a populated local database.
+
+## Usage
 
 Crawler CLI:
 ```
